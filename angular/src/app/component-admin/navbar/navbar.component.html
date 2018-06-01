@@ -1,0 +1,52 @@
+<!--sidebar start-->
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+            <h5 class="centered">Marcel Newman</h5>
+
+            <li class="mt">
+                <a class="active" [routerLink]="['/admin']" >
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-desktop"></i>
+                    <span>Topic</span>
+                </a>
+                <ul class="sub">
+                    <li ><a  [routerLink]="['/admin/topiclist']" >List</a></li>
+                    <li ><a  [routerLink]="['/admin/topicadd']">Add</a></li>
+                    <li ><a  [routerLink]="['/:id/admin/topicedit']">Edit</a></li>
+                </ul>
+            </li>
+
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-cogs"></i>
+                    <span>Vocabulary</span>
+                </a>
+                <ul class="sub">
+                    <li ><a  [routerLink]="['/admin/vocabularyadd']" >Add</a></li>
+                    <li ><a  [routerLink]="['/admin/vocabularylist']" >List</a></li>
+                    <li ><a  [routerLink]="['/:id/admin/vocabularyedit']" >Edit</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-book"></i>
+                    <span>User</span>
+                </a>
+                <ul class="sub">
+                    <li><a  [routerLink]="['/admin/userlist']">List</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+
